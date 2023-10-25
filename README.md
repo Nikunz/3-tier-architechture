@@ -1,4 +1,4 @@
-## 3-Tier Architecture Deployment in AWS ## 
+# 3-Tier Architecture Deployment in AWS #
 
 This README.md file provides an overview of a 3-tier architecture deployed in Amazon Web Services (AWS). The architecture consists of a web layer, an application layer, and a data layer, utilizing MySQL database. Additionally, it includes load balancers, target groups, bastion hosts, NAT gateway, and Elastic IP for enhanced security and scalability.
 
