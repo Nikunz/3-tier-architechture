@@ -1,22 +1,26 @@
-3-Tier Architecture Deployment in AWS
+## 3-Tier Architecture Deployment in AWS ## 
+
 This README.md file provides an overview of a 3-tier architecture deployed in Amazon Web Services (AWS). The architecture consists of a web layer, an application layer, and a data layer, utilizing MySQL database. Additionally, it includes load balancers, target groups, bastion hosts, NAT gateway, and Elastic IP for enhanced security and scalability.
 
-Architecture Overview
-1. Web Layer
+# Architecture Overview #
+# 1. Web Layer # 
+
 The web layer is the entry point for user traffic. It hosts the web application and serves as a reverse proxy for client requests. Key components of the web layer include:
 
 Load Balancers: Use AWS Elastic Load Balancers (ELB) to distribute incoming traffic across multiple web servers for high availability and scalability.
 
 Elastic IP: Assign an Elastic IP address to the load balancer to provide a static, publicly accessible IP address for the web application.
 
-2. Application Layer
+# 2. Application Layer #
+
 The application layer contains the core logic and business logic of your application. It handles requests from the web layer and communicates with the data layer. Key components of the application layer include:
 
 Application Servers: Deploy one or more application servers, such as EC2 instances, to run your application code.
 
 Bastion Hosts: Implement bastion hosts (jump hosts) for secure SSH access to your application servers. Restrict SSH access to only trusted IP addresses using security groups.
 
-3. Data Layer
+# 3. Data Layer #
+ 
 The data layer stores and manages the application's data. It typically includes a relational database like MySQL. Key components of the data layer include:
 
 MySQL Database: Set up an Amazon RDS instance or deploy MySQL on EC2 instances as needed for your application's data storage.
